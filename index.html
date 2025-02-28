@@ -1,35 +1,192 @@
 <!DOCTYPE html>
-<html LANG="ES">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-COMPATIBLE" content="IE=EDGE">
-    <meta name="VIEWPORT" content="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.
-    css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<html lang="ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=EDGE" />
+    <meta name="VIEWPORT" content="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="estilos.css">"
-</HEAD>
-<BODY>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">    
-        <header>
-            <div class="logo">
-                <a href="#">Rafael Barrera</a> 
+    <div class="container-header">
+      <header>
+        <div class="logo">
+          <a href="#">Rafael Barrera</a>
         </div>
         <nav id="nav">
-                <ul>
-                    <li><a href="#Inicio">INICIO</a></li>
-                    <li><a href="#Sobremi">SOBRE MI</a></li>
-                    <li><a href="#Skills">SKILLS</a></li>
-                    <li><a href="#Curriculum">CURRICULUM</a></li>
-                    <li><a href="#Portfolio">PORTFOLIO</a></li>
-                    <li><a href="#Contacto">CONTACTO</a></li>
-                </ul> 
-            </nav>
-            <div class="nav-responsive">
-                <i class="fas fa-bars"></i>
-            </div>
-        </header>
+          <ul>
+            <li><a href="#Inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#Sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#Skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#Curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#Portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#Contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
     </div>
+
+    <!--SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+      <div class="container-img">
+        <img src="img/IMG_155.jpeg" alt="">
+      </div>
+        <h1>Rafael Barrera</h1>
+        <h2>Co administrados y analista de datos</h2>
+        <div class="redes">
+          <a href="url"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="container-sobremi">
+        <h2>Sobre mi</h2>
+        <p><span> Hola, soy Rafael Barrera.</span>Soy Rafael Barrera, analista de datos y líder en equipos multidisciplinarios. Con experiencia en transformar datos complejos en insights clave para la toma de decisiones estratégicas, he utilizado herramientas como Excel y Power BI para optimizar recursos y maximizar resultados. Actualmente, estoy expandiendo mis habilidades en programación web, lo que me permite combinar mi experiencia analítica con el desarrollo de soluciones tecnológicas innovadoras.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+          <h3>Datos personales</h3>
+          <ul>
+            <li>
+              <strong>Nombre</strong>
+              <br>Rafael Barrera
+            </li>
+            <li>
+          <strong>Telefono</strong>
+          <br>+57 3144069611
+        </li>
+        <li>
+          <strong>Email</strong>
+          <br>rafabart97@gmail.com
+        </li>
+        <li>
+          <strong>Ciudad</strong>
+          <br>Bogota
+        </li>
+        <li>
+          <strong>Cargo</strong>
+          <br><spam>Co administrador y analista de datos</spam>
+        </li>
+      </ul>
+        </div>
+
+        <!-- intreses -->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="container-interes">
+            <div class="interes">
+              <i class="fa-solid fa-code"></i>
+              <span>PROGRAMACION</span>
+          </div>
+            <div class="interes">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>INVERSIONES</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-plane"></i>
+              <span>VIAJAR</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-book"></i>
+              <span>LEER</span>
+            </div>
+
+        </div>
+      </div>
+      </div>
+      <button>
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
+    </div>
+    </section>
+
+    <!--SECCION SKILLS -->
+    <section class="skills" id="skills">
+    <div class="contenido-seccion">
+      <h2>Skills</h2>
+      <div class="fila">
+        <!--Technical skill-->
+        <div class="col">
+          <h3>Habilidades Tècnicas</h3>
+          <div class="skill">
+            <span>Javascript</span>
+      </div>
+      <div class="skill">
+        <span>HTML & CSS</span>
+  </div>
+  <div class="skill">
+    <span>ERP</span>
+</div>
+<div class="skill">
+  <span>Power Bi</span>
+</div>
+<!-- Professional Skills-->
+ <div class="col">
+  <h3> Habilidades Blandas</h3>
+  <div class="skill">
+    <span>Comunicación</span>
+</div>
+<div class="skill">
+  <span>Trabajo en equipo</span>
+</div>
+<div class="skill">
+  <span>Resolución de problemas</span>
+<div class="skill">
+  <span>Adaptabilidad</span>
+</div>
+<div class="skill">
+  <span>Organizacion</span>
+</div>
+</div>
+</div>
+</div>
+    </section>
+
+    <!--SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="container-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Experiencia Laboral</h3>
+            <div class="item izq">
+              <h4>Co administrador</h4>
+              <span class="empresa">Empresa: Deporte Sas</span>
+              <span class="fecha">Fecha: 2022-Actual</span>
+              <p>Coordinacion de equipos de trabajo,
+                optimizacion de procesos administrativos, gestion de
+                recursos y garantia de eficiencia operativa.
+                <div class="conectori">
+                  <div class="circuloi"></div>
+            </div>
+            </div>
+            <div class="item izq">
+              <h4>Analista de datos</h4>
+              <span class="empresa">Empresa: Deporte Sas</span>
+              <span class="fecha">Fecha: 2022-Actual</span>
+              <p>Analisis de datos, transformacion de informacion
+                compleja en insights claros, optimizacion de recursos y
+                maximizacion de resultados.
+                <div class="conectori">
+                  <div class="circuloi"></div>
+            </div>
+            </div>
+          </div class="item izq"
+  </section>
+
 </body>
 </html>
